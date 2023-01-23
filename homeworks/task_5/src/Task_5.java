@@ -105,7 +105,6 @@ public class Task_5 implements Task_5_base {
         return map;
     }
 
-
     @Override
     public HashMap<String, Double> subtask_8_HashMap(ArrayList<Double> data) {
         // Дан список чисел. Сформировать словарь, содержащий среднее,
