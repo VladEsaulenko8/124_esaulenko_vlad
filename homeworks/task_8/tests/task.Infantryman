@@ -1,0 +1,269 @@
+Enemies
+task.BattleUnit[]
+2
+task.Infantryman
+s:"enemy 1";;i:100;;i:10;;i:20
+task.Infantryman
+s:"enemy 2";;i:150;;i:15;;i:10
+Brothers
+task.BattleUnit[]
+2
+task.Infantryman
+s:"enemy 1";;i:110;;i:11;;i:21
+task.Infantryman
+s:"enemy 2";;i:140;;i:14;;i:9
+##
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+name; health; maxHealth; strength; baseStrength; armor; maxArmor
+(); (); (); (); (); (); ()
+s:"man 1"; i:100; i:100; i:10; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+setMaxHealth; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:150); (); (); (); (); (); ()
+; i:150; i:100; i:10; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+setMaxHealth; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:80); (); (); (); (); (); ()
+; i:80; i:80; i:10; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+takeDamage; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:40); (); (); (); (); (); ()
+; i:100; i:60; i:10; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+setStrength; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:20); (); (); (); (); (); ()
+; i:100; i:100; i:20; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+restoreArmor; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:10); (); (); (); (); (); ()
+; i:100; i:100; i:10; i:10; i:20; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+damageArmor; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:10); (); (); (); (); (); ()
+; i:100; i:100; i:10; i:10; i:10; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+damageArmor; restoreArmor; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:10); (i:5); (); (); (); (); (); ()
+; ; i:100; i:100; i:10; i:10; i:15; i:20
+}
+{
+##Constructor
+s:"man 1"; i:100; i:10; i:20
+##Calls
+setMaxArmor; maxHealth; health; strength; baseStrength; armor; maxArmor
+(i:30); (); (); (); (); (); ()
+; i:100; i:100; i:10; i:10; i:20; i:30
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].maxHealth
+(o:Brothers, o:Enemies); ()
+; i:100
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].health
+(o:Brothers, o:Enemies); ()
+; i:100
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].armor
+(o:Brothers, o:Enemies); ()
+; i:20
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].maxArmor
+(o:Brothers, o:Enemies); ()
+; i:20
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].baseStrength
+(o:Brothers, o:Enemies); ()
+; i:10
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[0].strength
+(o:Brothers, o:Enemies); ()
+; i:10
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].maxHealth
+(o:Brothers, o:Enemies); ()
+; i:150
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].health
+(o:Brothers, o:Enemies); ()
+; i:150
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].armor
+(o:Brothers, o:Enemies); ()
+; i:10
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].maxArmor
+(o:Brothers, o:Enemies); ()
+; i:10
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].baseStrength
+(o:Brothers, o:Enemies); ()
+; i:15
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Enemies[1].strength
+(o:Brothers, o:Enemies); ()
+; i:15
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].maxHealth
+(o:Brothers, o:Enemies); ()
+; i:110
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].health
+(o:Brothers, o:Enemies); ()
+; i:110
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].armor
+(o:Brothers, o:Enemies); ()
+; i:21
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].maxArmor
+(o:Brothers, o:Enemies); ()
+; i:21
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].baseStrength
+(o:Brothers, o:Enemies); ()
+; i:11
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[0].strength
+(o:Brothers, o:Enemies); ()
+; i:11
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].maxHealth
+(o:Brothers, o:Enemies); ()
+; i:140
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].health
+(o:Brothers, o:Enemies); ()
+; i:140
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].armor
+(o:Brothers, o:Enemies); ()
+; i:9
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].maxArmor
+(o:Brothers, o:Enemies); ()
+; i:9
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].baseStrength
+(o:Brothers, o:Enemies); ()
+; i:14
+}
+{
+##Brothers[0]
+##Calls
+specialAbility; Brothers[1].strength
+(o:Brothers, o:Enemies); ()
+; i:14
+}
+{
+##Brothers[0]
+##Calls
+attack; Enemies[1].health; Enemies[1].maxHealth; Enemies[1].armor; Enemies[1].maxArmor
+(o:Enemies[1]); (); (); (); ()
+; i:145; i:150; i:8; i:10
+}
+{
+##Brothers[0]
+##Calls
+Enemies[1].damageArmor; attack; Enemies[1].health; Enemies[1].maxHealth; Enemies[1].armor; Enemies[1].maxArmor
+(i:10); (o:Enemies[1]); (); (); (); ()
+; ; i:139; i:150; i:0; i:10
+}

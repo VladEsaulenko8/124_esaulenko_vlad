@@ -1,0 +1,11 @@
+## extendedClass
+task.BattleUnitBase
+## constructorArguments
+java.lang.String
+int
+int
+int
+## abstractMethods
+## publicInstanceMethods
+specialAbility
+attack

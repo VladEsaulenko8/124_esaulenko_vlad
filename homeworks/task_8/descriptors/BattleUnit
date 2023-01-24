@@ -1,0 +1,17 @@
+## publicInstanceMethods
+name
+health
+maxHealth
+setMaxHealth
+heal
+takeDamage
+strength
+setStrength
+baseStrength
+armor
+restoreArmor
+damageArmor
+maxArmor
+setMaxArmor
+specialAbility
+attack

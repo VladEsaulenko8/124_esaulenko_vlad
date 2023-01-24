@@ -1,0 +1,10 @@
+## constructorArguments
+java.lang.String
+int
+int
+int
+## abstractMethods
+specialAbility
+attack
+## implementedInterfaces
+task.BattleUnit
