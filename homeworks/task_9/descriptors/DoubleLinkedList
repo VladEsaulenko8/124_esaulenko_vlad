@@ -1,0 +1,11 @@
+## constructorArguments
+## abstractMethods
+## publicInstanceMethods
+findFirstItem
+findLastItem
+insertAfter
+insertBefore
+remove
+getSize
+getFirst
+getLast

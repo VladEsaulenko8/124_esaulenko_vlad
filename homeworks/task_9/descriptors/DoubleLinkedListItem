@@ -1,0 +1,10 @@
+## constructorArguments
+java.lang.Comparable
+## abstractMethods
+## publicInstanceMethods
+getNext
+getPrev
+getData
+setNext
+setPrev
+setData
